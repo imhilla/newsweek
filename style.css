@@ -1,0 +1,87 @@
+header {
+    background-color: red;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .header-tab {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .news-week-logo {
+        margin-left: -15px;
+        height: 40px;
+    }
+
+    .header-wrapper {
+        line-height: 50px;
+    }
+
+    .bars {
+        color: rgb(236, 235, 235);
+        font-size: 24px;
+        margin: auto 7px;
+    }
+
+    .subscribe {
+        background-color: white;
+        border-radius: 0%;
+        margin: auto 0;
+        color: red;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .sign-in {
+        font-weight: bold;
+        color: white;
+        font-size: 13px;
+        margin: 0 3px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .header-tab {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-wrapper {
+        line-height: 50px;
+    }
+
+    .news-week-logo {
+        height: 40px;
+    }
+
+    .bars {
+        color: rgb(236, 235, 235);
+        font-size: 30px;
+        margin: auto 10px;
+    }
+
+    .sign-in {
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    .subscribe {
+        background-color: white;
+        line-height: 7px;
+        border-radius: 0%;
+        margin: auto 20px;
+        color: red;
+        font-weight: bold;
+    }
+    .fa-angle-right {
+        color: red;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+      
+  }
