@@ -59,7 +59,7 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .header-wrapper2 {
     display: none;
   }
@@ -112,7 +112,7 @@ header {
   }
 
   .logo2 {
-    height: 110px;
+    height: 100px;
   }
 
   .header-wrapper2 {
@@ -128,6 +128,11 @@ header {
     font-size: 15px;
     line-height: 10px;
     margin: 0 20px;
+  
+  }
+  
+  .subscribe1 {
+    margin-right: 40px;
   }
 
   .sign-in {
@@ -145,12 +150,9 @@ header {
   .date {
     position: relative;
     bottom: -20px;
+    left: 20px;
     color: white;
     line-height: 30px;
-  }
-
-  li {
-    display: list-item;
   }
 
   .main-nav ul li:first-of-type {
@@ -159,17 +161,17 @@ header {
 
   .main-nav ul li:last-of-type {
     flex-grow: 0;
-    margin-right: 5rem;
     border: none;
+    margin-right: 2.5em;
   }
 
   .page-nav::after {
       position: absolute;
-      top: 110px;
+      top: 100px;
       right: 0;
       content: '';
-      border-top: 0.8rem solid rgb(247, 34, 16);
-      border-right: 65px solid rgb(247, 34, 16);
+      border-top: 0.8rem solid red;
+      border-right: 65px solid red;
       border-left: 0.8rem solid white;
   }
   
@@ -177,15 +179,17 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 19px;
+    font-size: 17.5px;
     line-height: 24px;
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    z-index: 1;
+    margin-left: -10px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    z-index: 1;
+    border-bottom-color: #f4f5f6;
   }
 
   ul.page-nav li {
@@ -198,13 +202,12 @@ header {
   ul.page-nav li {
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: #928f8f;
+    border-left-color: #c7c7c7;
     text-align: center;
   }
 
   nav {
     background-color: white;
-    border-bottom: gray;
   }
 
   ul li.leaf {
@@ -229,25 +232,8 @@ header {
     display: inline-block;
     text-align: start;
   }
-
-  li.first-us {
-    border: none;
-  }
-
-  /*.header-bottom {  
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    width: 22px;
-    line-height: 5px;
-    background-color: #f72210;
-    border-left: 12px solid white;
-    border-top: 13px solid #f72210;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    z-index: 1;
+.first a:hover {
+text-decoration: none;
+color: red;
 }
   }
