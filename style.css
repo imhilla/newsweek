@@ -152,6 +152,18 @@ header {
   li {
     display: list-item;
   }
+
+  .page-nav::after {
+      position: relative;
+      top: 0;
+      right: -10;
+      content: "";
+      display: block;
+      background-color: #f72210;
+      border-left: 12px solid white;
+      border-top: 13px solid #f72210;
+  }
+  
   ul.page-nav {
     display: flex;
     justify-content: center;
@@ -160,6 +172,11 @@ header {
     line-height: 24px;
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    z-index: 1;
   }
 
   ul.page-nav li {
@@ -172,7 +189,7 @@ header {
   ul.page-nav li {
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: #d9d9d9;
+    border-left-color: #928f8f;
     text-align: center;
   }
 
@@ -194,31 +211,34 @@ header {
     padding: 0;
   }
 
-  /*
-nav ul li a{
-    border-right: 1px solid black;
-    text-align: center;
-    box-sizing: border-box;
+  input {
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+  }
+
+  li.first-us {
+    border: none;
+  }
+
+  /*.header-bottom {  
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 22px;
+    line-height: 5px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    z-index: 1;
 }
-
-  
-
-  li {
-      line-height: 50px;
   }
-  .nav-ul li a {
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0 5px;
-  }
-  .nav-ul li a:hover {
-    color: red;
-  }
-
-  
-  .weather {
-      border: none;
-  }*/
-}
