@@ -1,87 +1,191 @@
 header {
-    background-color: red;
+  background-color: red;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-    .header-tab {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .news-week-logo {
-        margin-left: -15px;
-        height: 40px;
-    }
+  .news-week-logo {
+    margin-left: -20px;
+    height: 40px;
+  }
 
-    .header-wrapper {
-        line-height: 50px;
-    }
+  .header-wrapper {
+    line-height: 50px;
+  }
 
-    .bars {
-        color: rgb(236, 235, 235);
-        font-size: 24px;
-        margin: auto 7px;
-    }
+  .bars {
+    color: rgb(236, 235, 235);
+    font-size: 24px;
+    margin: auto 10px;
+  }
 
-    .subscribe {
-        background-color: white;
-        border-radius: 0%;
-        margin: auto 0;
-        color: red;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 10px;
-    }
+  .subscribe {
+    background-color: white;
+    border-radius: 0%;
+    margin: auto 0;
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+  }
 
-    .sign-in {
-        font-weight: bold;
-        color: white;
-        font-size: 13px;
-        margin: 0 3px;
-    }
+  .sign-in {
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    margin: 0 3px;
+  }
+
+  nav,
+  .header-wrapper2 {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 480px) {
-    .header-tab {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .header-wrapper {
-        line-height: 50px;
-    }
-
-    .news-week-logo {
-        height: 40px;
-    }
-
-    .bars {
-        color: rgb(236, 235, 235);
-        font-size: 30px;
-        margin: auto 10px;
-    }
-
-    .sign-in {
-        font-weight: bold;
-        color: white;
-        font-size: 20px;
-    }
-
-    .subscribe {
-        background-color: white;
-        line-height: 7px;
-        border-radius: 0%;
-        margin: auto 20px;
-        color: red;
-        font-weight: bold;
-    }
-    .fa-angle-right {
-        color: red;
-    }
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .header-wrapper2 {
+    display: none;
   }
 
-  @media screen and (min-width: 768px){
-      
+  .header-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
+
+  .header-wrapper {
+    line-height: 50px;
+  }
+
+  .news-week-logo {
+    height: 40px;
+  }
+
+  .bars {
+    color: rgb(236, 235, 235);
+    font-size: 30px;
+    margin: auto 20px;
+  }
+
+  .sign-in {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+  }
+
+  .subscribe {
+    background-color: white;
+    line-height: 7px;
+    border-radius: 0%;
+    margin: auto 20px;
+    color: red;
+    font-weight: bold;
+  }
+  .fa-angle-right {
+    color: red;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-tab {
+    display: none;
+  }
+
+  .logo2 {
+    height: 110px;
+  }
+
+  .header-wrapper2 {
+    line-height: 90px;
+    width: 100%;
+  }
+
+  .subscribe {
+    background-color: white;
+    border-radius: 0%;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 10px;
+    margin: 0 20px;
+  }
+
+  .sign-in {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+  }
+
+  .right-laptop-subscribe {
+    position: relative;
+    justify-content: flex-end;
+    bottom: -20px;
+  }
+
+  .date {
+    position: relative;
+    bottom: -20px;
+    color: white;
+    line-height: 30px;
+  }
+
+  ul.nav-ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+  }
+
+  nav {
+    background-color: white;
+    border-bottom: gray;
+   
+  } /*
+nav ul li a{
+    border-right: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+  nav ul li input {
+   width: 55px;
+   border: none;
+   font-size: 17px;
+   padding: 0;
+  }
+
+  li {
+      line-height: 50px;
+  }
+  .nav-ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  .nav-ul li a:hover {
+    color: red;
+  }
+
+  .fa-search {
+    
+      right: 0;
+      top: 4px;
+      font-size: 20px;
+  }
+  .weather {
+      border: none;
+  }*/
+}
