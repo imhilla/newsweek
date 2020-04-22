@@ -153,15 +153,24 @@ header {
     display: list-item;
   }
 
+  .main-nav ul li:first-of-type {
+    border: none;
+  }
+
+  .main-nav ul li:last-of-type {
+    flex-grow: 0;
+    margin-right: 5rem;
+    border: none;
+  }
+
   .page-nav::after {
-      position: relative;
-      top: 0;
-      right: -10;
-      content: "";
-      display: block;
-      background-color: #f72210;
-      border-left: 12px solid white;
-      border-top: 13px solid #f72210;
+      position: absolute;
+      top: 110px;
+      right: 0;
+      content: '';
+      border-top: 0.8rem solid rgb(247, 34, 16);
+      border-right: 65px solid rgb(247, 34, 16);
+      border-left: 0.8rem solid white;
   }
   
   ul.page-nav {
