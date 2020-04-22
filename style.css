@@ -141,6 +141,7 @@ header {
     position: relative;
     justify-content: flex-end;
     bottom: -20px;
+    overflow: hidden;
   }
 
   .date {
@@ -169,6 +170,7 @@ header {
       border-top: 0.8rem solid red;
       border-right: 65px solid red;
       border-left: 0.8rem solid white;
+      overflow: hidden;
   }
   
   ul.page-nav {
