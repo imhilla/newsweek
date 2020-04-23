@@ -10,8 +10,80 @@ a {
   cursor: pointer;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
 header {
   background-color: red;
+}
+
+picture {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+}
+
+.sponsor {
+  border: 1px solid #e6e6e6;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(12, 11, 11, 0.8);
+}
+
+.category {
+  display: block;
+  color: #f72210;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.culture-item, .tags a {
+  display: inline-block;
+  background-color: #c2d4d7;
+  padding-left: 6px;
+  padding-right: 6px;
+  font: 300 13px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+  color: #272727;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -56,6 +128,18 @@ header {
   nav,
   .header-wrapper2 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .h3 {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -128,7 +212,6 @@ header {
     font-size: 15px;
     line-height: 10px;
     margin: 0 20px;
-  
   }
 
   .sign-in {
@@ -163,16 +246,16 @@ header {
   }
 
   .page-nav::after {
-      position: absolute;
-      top: 100px;
-      right: 0;
-      content: '';
-      border-top: 0.8rem solid red;
-      border-right: 65px solid red;
-      border-left: 0.8rem solid white;
-      overflow: hidden;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    content: "";
+    border-top: 0.8rem solid red;
+    border-right: 65px solid red;
+    border-left: 0.8rem solid white;
+    overflow: hidden;
   }
-  
+
   ul.page-nav {
     display: flex;
     justify-content: center;
@@ -230,8 +313,8 @@ header {
     display: inline-block;
     text-align: start;
   }
-.first a:hover {
-text-decoration: none;
-color: red;
-}
+  .first a:hover {
+    text-decoration: none;
+    color: red;
   }
+}
