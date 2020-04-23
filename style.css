@@ -182,6 +182,21 @@ h4 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.c-r {
+  border-top: 4px solid #f92859;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.subfeature2 .image {
+  -webkit-flex: none;
+  flex: none;
+  width: 95px;
+  margin-right: 15px;
+}
 /*
 ul {
   display: block;
