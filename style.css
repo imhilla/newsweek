@@ -193,6 +193,10 @@ h4 {
   border-top: 4px solid #f92859;
 }
 
+.c-r2 {
+  border-top: 4px solid #5244d1;
+}
+
 .ai-c {
   align-items: center;
 }
@@ -237,6 +241,16 @@ h4 {
   margin-right: 15px;
 }
 
+.c-vs {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed",sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
 /*
 ul {
   display: block;
