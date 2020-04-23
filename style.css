@@ -15,6 +15,17 @@ body {
   overflow-x: hidden;
 }
 
+.image a,
+header,
+footer,
+nav,
+section,
+article,
+hgroup,
+figure {
+  display: block;
+}
+
 header {
   background-color: red;
 }
@@ -63,17 +74,75 @@ img {
   padding: 20px;
 }
 
-.culture-item, .tags a {
+.culture-item,
+.tags a {
   display: inline-block;
   background-color: #c2d4d7;
   padding-left: 6px;
   padding-right: 6px;
-  font: 300 13px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+  font: 300 13px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
   color: #272727;
   position: absolute;
   bottom: 0;
   left: 0;
+}
 
+.culture-item .info {
+  padding: 15px 0 20px;
+}
+
+.culture-item,
+.title {
+  color: #272727;
+  font: 20px/22px "Lora", serif;
+  margin-bottom: 10px;
+}
+
+.feature2,
+.block-title {
+  color: rgba(3, 3, 3, 0.4);
+}
+article {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.culture-item,
+.summary {
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
+}
+
+.image1 {
+  float: left;
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed",sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.feature2, h4 {
+  font-size: 17px;
+}
+
+h4 {
+  display: block;
+  font-weight: bold;
+}
+
+.image1 img {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
