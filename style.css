@@ -379,7 +379,7 @@ picture {
   padding-right: 15px;
 }
 
-.magazine .col-sm-4 picture{
+.magazine .col-sm-4 picture, .magazine .col-sm-3 picture {
   display: block;
   position: relative;
   padding-bottom: 100%;
@@ -387,7 +387,7 @@ picture {
 }
 
 @media screen and (min-width: 768px){
-.magazine .col-sm-4 picture img{
+.magazine .col-sm-4 picture img, .magazine .col-sm-3 picture img {
     transform: translate(-50%,0%);
     position: absolute;
     top: 0;
@@ -406,8 +406,6 @@ picture {
     margin-top: 20px;
     font-family: "Roboto Condensed",sans-serif;
   }
-
-  
 }
 @media screen and (min-width: 768px) {
   .magazine,
