@@ -379,7 +379,8 @@ picture {
   padding-right: 15px;
 }
 
-.magazine .col-sm-4 picture, .magazine .col-sm-3 picture {
+.magazine .col-sm-4 picture,
+.magazine .col-sm-3 picture {
   display: block;
   position: relative;
   padding-bottom: 100%;
@@ -401,25 +402,64 @@ picture {
   text-transform: none;
 }
 
-@media (min-width: 768px){
-.subscribe-block {
+.subscribe-block .mag-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.flex-sm {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.onek.red {
+  background-color: #f72210;
+}
+
+.subscribe-block .mag-thumb.current {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.subscribe-block .mag-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-block .col-l .info {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-block .col-l,
+  .subscribe-block .col-r .info {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe-block {
     position: relative;
     padding-top: 40px;
+  }
 }
-}
-@media screen and (min-width: 768px){
-.subscribe-block .col-l, .subscribe-block .col-r .info {
+@media screen and (min-width: 768px) {
+  .subscribe-block .col-l,
+  .subscribe-block .col-r .info {
     padding: 30px;
-}
+  }
 }
 
 .subscribe-block .col-l {
   background-color: #f4f5f6;
   padding: 24px 20px 20px;
 }
-@media screen and (min-width: 768px){
-.magazine .col-sm-4 picture img, .magazine .col-sm-3 picture img {
-    transform: translate(-50%,0%);
+@media screen and (min-width: 768px) {
+  .magazine .col-sm-4 picture img,
+  .magazine .col-sm-3 picture img {
+    transform: translate(-50%, 0%);
     position: absolute;
     top: 0;
     left: 50%;
@@ -427,7 +467,7 @@ picture {
     height: 100%;
     max-width: inherit;
     overflow: hidden;
-}
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -435,7 +475,7 @@ picture {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
 }
 @media screen and (min-width: 768px) {
