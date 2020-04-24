@@ -386,6 +386,15 @@ picture {
   overflow: hidden;
 }
 
+.section-picks .block-title {
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: none;
+}
+
 @media screen and (min-width: 768px){
 .magazine .col-sm-4 picture img, .magazine .col-sm-3 picture img {
     transform: translate(-50%,0%);
