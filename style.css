@@ -386,6 +386,12 @@ picture {
   overflow: hidden;
 }
 
+.subscribe-block .col-l .image {
+  position: relative;
+  padding-bottom: 13px;
+  padding-right: 90px;
+}
+
 .section-picks .block-title {
   border-top: 1px solid #d9d9d9;
   color: #f72210;
@@ -395,6 +401,22 @@ picture {
   text-transform: none;
 }
 
+@media (min-width: 768px){
+.subscribe-block {
+    position: relative;
+    padding-top: 40px;
+}
+}
+@media screen and (min-width: 768px){
+.subscribe-block .col-l, .subscribe-block .col-r .info {
+    padding: 30px;
+}
+}
+
+.subscribe-block .col-l {
+  background-color: #f4f5f6;
+  padding: 24px 20px 20px;
+}
 @media screen and (min-width: 768px){
 .magazine .col-sm-4 picture img, .magazine .col-sm-3 picture img {
     transform: translate(-50%,0%);
