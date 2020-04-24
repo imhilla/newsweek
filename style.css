@@ -310,6 +310,17 @@ h4 {
   background-color: #666;
 }
 
+.onek1 {
+  display: block;
+  background-color: #f4f5f6;
+  color: black;
+  text-align: center;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 12px;
+}
+
 .container-fluid,
 .container {
   max-width: 100vw;
@@ -320,7 +331,84 @@ h4 {
   left: auto;
   top: auto;
 }
+.flex-sm-3 {
+  width: 25%;
+  padding: 0 15px;
+}
 
+picture {
+  display: block;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.category1 {
+  display: block;
+  font: bold 16px/33px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.magazine article span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.magazine article span:last-of-type {
+  padding: 0 7px;
+  color: red;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.flex-sm-9 {
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.magazine .col-sm-4 picture{
+  display: block;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+.magazine .col-sm-4 picture img{
+    transform: translate(-50%,0%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-width: inherit;
+    overflow: hidden;
+}
+}
+
+@media screen and (min-width: 768px) {
+  h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Roboto Condensed",sans-serif;
+  }
+
+  
+}
 @media screen and (min-width: 768px) {
   .magazine,
   .n-title {
