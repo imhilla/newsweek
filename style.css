@@ -524,6 +524,7 @@ picture {
   text-transform: uppercase;
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-tab {
     display: flex;
@@ -600,16 +601,31 @@ picture {
   }
 
 }
+
 @media screen and (min-width: 768px) {
-h5 {
+  h5 {
     font-size: 15px;
     line-height: 20px;
     font-weight: bold;
-}}
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .header-wrapper2 {
     display: none;
+  }
+
+  .fd-cc {
+    flex-direction: column;
+  }
+
+  .ai-c {
+    align-items: center;
+  }
+
+  .imge {
+    background: url(img/neweek.PNG) center center / cover no-repeat;
+    height: 160px;
   }
 
   .header-tab {
@@ -654,7 +670,7 @@ h5 {
   nav {
     display: none;
   }
-  
+
   .magazine .col-sm-4 picture img,
   .magazine .col-sm-3 picture img {
     transform: translate(-50%, 0%);
@@ -667,6 +683,7 @@ h5 {
     overflow: hidden;
   }
 
+
 }
 
 @media screen and (max-width: 991px) and (min-width: 481px) {
@@ -676,6 +693,37 @@ h5 {
 
   .paddd {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .subscribe-block .col-l,
+  .subscribe-block .col-r {
+    text-align: center;
+  }
+
+  .col-l,
+  .col-r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subscribe-block .col-l {
+    background-color: #f4f5f6;
+    padding: 24px 20px 20px;
+  }
+
+  .subscribe-block .col-r .image{
+    height: 160px;
+    width: fit-content;
+    overflow: hidden;
+    max-width: 633px;
+  }
+  .hide5 {
+    display: none;
   }
 }
 
@@ -758,6 +806,9 @@ h5 {
   .hide2 {
     display: none;
   }
+
+  .hide6 {
+    display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -894,6 +945,10 @@ h5 {
     text-decoration: none;
     color: red;
   }
+
+.hide6 {
+  display: none;
+}
 }
 
 /*
