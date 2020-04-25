@@ -79,9 +79,18 @@ img {
   margin-left: auto;
 }
 
+.container-pad {
+  padding: 5px 10px 0 10px;
+}
+
 .row {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.padddd {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .colwrap .col4 {
@@ -534,6 +543,14 @@ picture {
     height: 40px;
   }
 
+  h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+
   .header-wrapper {
     line-height: 50px;
   }
@@ -578,7 +595,17 @@ picture {
     overflow: hidden;
   }
 
+  .hide {
+    display: none;
+  }
+
 }
+@media screen and (min-width: 768px) {
+h5 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+}}
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .header-wrapper2 {
@@ -627,6 +654,19 @@ picture {
   nav {
     display: none;
   }
+  
+  .magazine .col-sm-4 picture img,
+  .magazine .col-sm-3 picture img {
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-width: inherit;
+    overflow: hidden;
+  }
+
 }
 
 @media screen and (max-width: 991px) and (min-width: 481px) {
@@ -705,7 +745,7 @@ picture {
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
     font-family: "Roboto Condensed", sans-serif;
@@ -713,6 +753,10 @@ picture {
 
   .colwrap .col1 {
     width: 45%;
+  }
+
+  .hide2 {
+    display: none;
   }
 }
 
