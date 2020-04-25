@@ -8,6 +8,11 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 5px;
+}
+
+a:hover {
+  color: red;
 }
 
 body {
@@ -105,6 +110,10 @@ img {
 
 .culture-item .info {
   padding: 15px 0 20px;
+}
+
+.f1 {
+  flex: 1;
 }
 
 .culture-item,
@@ -300,6 +309,10 @@ h4 {
   margin-bottom: 10px;
 }
 
+.red3 {
+  color: red;
+}
+
 .onek {
   display: inline-block;
   padding: 10px 10px 10px 12px;
@@ -308,6 +321,11 @@ h4 {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: #666;
+}
+
+.subscribe-block .col-r .info {
+  border: 1px solid #ebebeb;
+  padding: 20px;
 }
 
 .onek1 {
