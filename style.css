@@ -317,8 +317,8 @@ h4 {
 .colwrap .col1 {
   float: left;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+ /* padding-left: 15px;
+  padding-right: 15px;*/
 }
 
 .col2 {
@@ -722,7 +722,7 @@ h4 {
   .upper-footer, .upper-footer1 {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-self: flex-start;
   }
 }
 
@@ -815,12 +815,18 @@ h4 {
   .hide6 {
     display: none;
   }
+
+  .upper-footer1 img{
+    height: 50px;
+    width: 200px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
+   /* padding-left: 30px;
+    padding-right: 30px;*/
   }
 
   .header-tab {
@@ -973,7 +979,7 @@ h4 {
   line-height: 12px;
   text-transform: uppercase;
   color: #666;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .jc-sb {
@@ -1036,8 +1042,15 @@ h4 {
 
 .social {
   color: gray;
+  margin-bottom: 5px;
 }
 
 .social a:hover {
   color: gray;
+}
+
+.upper-footer1 img{
+  height: 50px;
+  width: 200px !important;
+  margin-right: auto;
 }
