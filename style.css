@@ -719,6 +719,11 @@ h4 {
   .hide5 {
     display: none;
   }
+  .upper-footer, .upper-footer1 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -726,6 +731,14 @@ h4 {
     max-width: 330px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .ai-fe1 {
+    align-items: flex-end;
+  }
+
+  .copyright {
+    margin-top: 10px;
   }
 }
 
