@@ -41,7 +41,7 @@ header {
   background-color: red;
 }
 
-picture {
+div, picture {
   display: block;
   position: relative;
   overflow: hidden;
@@ -419,12 +419,6 @@ h4 {
   padding: 0 15px;
 }
 
-picture {
-  display: block;
-  background-color: #f0f0f0;
-  width: 100%;
-}
-
 .category1 {
   display: block;
   font: bold 16px/33px "Roboto Condensed", sans-serif;
@@ -462,8 +456,8 @@ picture {
   padding-right: 15px;
 }
 
-.magazine .col-sm-4 picture,
-.magazine .col-sm-3 picture {
+.magazine .col-sm-4 .picture,
+.magazine .col-sm-3 .picture {
   display: block;
   position: relative;
   padding-bottom: 100%;
@@ -582,8 +576,8 @@ picture {
     display: none;
   }
 
-  .magazine .col-sm-4 picture img,
-  .magazine .col-sm-3 picture img {
+  .magazine .col-sm-4 .picture img,
+  .magazine .col-sm-3 .picture img {
     transform: translate(-50%, 0%);
     position: absolute;
     top: 0;
@@ -668,8 +662,8 @@ picture {
     display: none;
   }
 
-  .magazine .col-sm-4 picture img,
-  .magazine .col-sm-3 picture img {
+  .magazine .col-sm-4 .picture img,
+  .magazine .col-sm-3 .picture img {
     transform: translate(-50%, 0%);
     position: absolute;
     top: 0;
@@ -749,7 +743,6 @@ picture {
     margin: 10px 0;
   }
 
-  .magazine,
   .n-title {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 8px;
@@ -774,8 +767,8 @@ picture {
     padding: 30px;
   }
 
-  .magazine .col-sm-4 picture img,
-  .magazine .col-sm-3 picture img {
+  .magazine .col-sm-4 .picture img,
+  .magazine .col-sm-3 .picture img {
     transform: translate(-50%, 0%);
     position: absolute;
     top: 0;
@@ -983,7 +976,6 @@ picture {
 
 .genericon {
   font-size: 26px;
-  vertical-align: top;
   text-align: center;
   display: block;
   font-family: "Genericons";
