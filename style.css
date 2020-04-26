@@ -682,8 +682,6 @@ picture {
     max-width: inherit;
     overflow: hidden;
   }
-
-
 }
 
 @media screen and (max-width: 991px) and (min-width: 481px) {
@@ -716,12 +714,13 @@ picture {
     padding: 24px 20px 20px;
   }
 
-  .subscribe-block .col-r .image{
+  .subscribe-block .col-r .image {
     height: 160px;
     width: fit-content;
     overflow: hidden;
     max-width: 633px;
   }
+
   .hide5 {
     display: none;
   }
@@ -809,6 +808,7 @@ picture {
 
   .hide6 {
     display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -946,17 +946,26 @@ picture {
     color: red;
   }
 
-.hide6 {
-  display: none;
+  .hide6 {
+    display: none;
+  }
 }
+
+.page-footer.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/*
-
-
-
-
-
-
-
- 
+.page-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  position: relative;
+}
+.page-footer .copyright {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px;
+}
