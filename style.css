@@ -957,6 +957,19 @@ h4 {
   .hide6 {
     display: none;
   }
+
+  .page-footer .social li {
+    margin-left: 10px;
+    margin-top: 35px;
+  }
+
+  .page-footer .copyright {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 35px;
+  }
 }
 
 .page-footer.container-fluid {
@@ -974,7 +987,7 @@ h4 {
   line-height: 12px;
   text-transform: uppercase;
   color: #666;
-  margin-top: 35px;
+  padding-bottom: -5px;
 }
 
 .jc-sb {
@@ -987,7 +1000,6 @@ h4 {
 
 .page-footer .social li {
   margin-left: 10px;
-  margin-top: 35px;
 }
 
 .page-footer .social .genericon {
