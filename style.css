@@ -100,7 +100,6 @@ img {
   padding-right: 15px;
 }
 
-
 .pad img {
   margin-right: 15px;
 }
@@ -157,7 +156,7 @@ img {
   margin-left: 0px;
 }
 
-.row.no-pad>[class*='col-'] {
+.row.no-pad > [class*="col-"] {
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -357,7 +356,8 @@ h4 {
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+    no-repeat #f72210;
   margin-right: 10px;
 }
 
@@ -524,7 +524,6 @@ picture {
   text-transform: uppercase;
 }
 
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-tab {
     display: flex;
@@ -550,7 +549,6 @@ picture {
     margin-top: 20px;
     font-family: "Roboto Condensed", sans-serif;
   }
-
 
   .header-wrapper {
     line-height: 50px;
@@ -599,7 +597,6 @@ picture {
   .hide {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -695,7 +692,6 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-
   .subscribe-block .col-l,
   .subscribe-block .col-r {
     text-align: center;
@@ -758,7 +754,6 @@ picture {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 8px;
   }
-
 
   .subscribe-block .col-l .info {
     padding-left: 30px;
@@ -968,4 +963,71 @@ picture {
   text-transform: uppercase;
   color: #666;
   margin-bottom: 12px;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.page-footer .social li {
+  margin-left: 10px;
+}
+
+.page-footer .social .genericon {
+  line-height: 24px;
+}
+
+.genericon {
+  font-size: 26px;
+  vertical-align: top;
+  text-align: center;
+  display: block;
+  font-family: "Genericons";
+  cursor: pointer;
+}
+
+.genericon-twitter {
+  font-size: 25px;
+}
+
+.page-footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .footer-links li {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}
+
+.page-footer .footer-links li {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.page-footer .footer-links li a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.social {
+  color: gray;
+}
+
+.social a:hover {
+  color: gray;
 }
