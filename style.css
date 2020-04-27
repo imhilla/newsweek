@@ -216,10 +216,6 @@ h4 {
   font-weight: bold;
 }
 
-.flex-xs {
-  display: flex;
-}
-
 .headshot {
   border-radius: 50%;
   width: 63px;
@@ -258,10 +254,6 @@ h4 {
 
 .c-r2 {
   border-top: 4px solid #5244d1;
-}
-
-.ai-c {
-  align-items: center;
 }
 
 .the-debate .byline .f1 {
@@ -477,10 +469,6 @@ h4 {
   padding: 24px 20px 20px;
 }
 
-.jc-c {
-  justify-content: center;
-}
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-tab {
     display: flex;
@@ -577,10 +565,6 @@ h4 {
 
   .fd-cc {
     flex-direction: column;
-  }
-
-  .ai-c {
-    align-items: center;
   }
 
   .imge {
@@ -697,10 +681,6 @@ h4 {
     max-width: 330px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .ai-fe1 {
-    align-items: flex-end;
   }
 
   .copyright {
@@ -945,10 +925,6 @@ h4 {
 
 .jc-sb {
   justify-content: space-between;
-}
-
-.ai-fe {
-  align-items: flex-end;
 }
 
 .page-footer .social li {
