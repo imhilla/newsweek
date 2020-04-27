@@ -5,7 +5,7 @@ In this project, i got the chance to try out Twitter’s Bootstrap framework by 
 Here's the screenshot of our work
 ![Screenshot](./img/screenshot.PNG "newsweek")
 
-Here's a <a href="https://rawcdn.githack.com/imhilla/newsweek/bdb56709a47ddda0ba81df72ab5344187e219dc3/index.html">live link</a>
+Here's a <a href="https://raw.githack.com/imhilla/newsweek/home-page/index.html">live link</a>
 
 Here is how the page is structured:
 The page is divided into three main sections as below;
