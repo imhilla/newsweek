@@ -201,6 +201,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Condensed", sans-serif;
+  margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -746,8 +747,8 @@ h4 {
   }
 
   .upper-footer1 img {
-    height: 50px;
-    width: 200px;
+    height: 30px;
+    width: 250px;
   }
 
   .magazine .col-sm-4 .picture img,
