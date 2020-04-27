@@ -334,8 +334,7 @@ h4 {
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
-    no-repeat #f72210;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
   margin-right: 10px;
 }
 
@@ -561,6 +560,10 @@ h4 {
   .hide {
     display: none;
   }
+
+  .tablet-laptop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -656,6 +659,10 @@ h4 {
 
   .paddd {
     padding: 0 20px;
+  }
+
+  .tablet-laptop {
+    display: none;
   }
 }
 
@@ -986,7 +993,6 @@ h4 {
 
 .social {
   color: gray;
- padding-top: 40px;
 }
 
 .social a:hover {
