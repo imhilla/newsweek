@@ -463,6 +463,13 @@ h4 {
   padding: 24px 20px 20px;
 }
 
+.footer-upper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-tab {
     display: flex;
@@ -923,7 +930,7 @@ h4 {
   line-height: 12px;
   text-transform: uppercase;
   color: #666;
-  padding-bottom: -5px;
+  justify-content: baseline;
 }
 
 .genericon {
