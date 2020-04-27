@@ -48,18 +48,11 @@ picture {
 }
 
 img {
-  max-width: 100%;
-}
-
-img {
-  vertical-align: middle;
-  height: auto;
-}
-
-img {
   min-width: 100%;
   min-height: 100%;
+  vertical-align: middle;
   width: auto;
+  max-width: 100%;
   height: auto;
 }
 
@@ -77,6 +70,7 @@ img {
 .container {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100vw;
 }
 
 .container-pad {
@@ -107,7 +101,7 @@ img {
 .sponsor {
   border: 1px solid #e6e6e6;
   background-color: #f8f8f8;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 
@@ -152,8 +146,8 @@ img {
 }
 
 .row.no-pad {
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .row.no-pad > [class*="col-"] {
@@ -180,7 +174,6 @@ img {
 article {
   padding-top: 14px;
   padding-bottom: 14px;
-  /* border-top: 1px solid #ddd;*/
 }
 
 .culture-item,
@@ -270,10 +263,6 @@ h4 {
   align-items: center;
 }
 
-.f1 {
-  flex: 1;
-}
-
 .the-debate .byline .f1 {
   padding-top: 4px;
 }
@@ -318,8 +307,6 @@ h4 {
 .colwrap .col1 {
   float: left;
   width: 100%;
-  /* padding-left: 15px;
-  padding-right: 15px;*/
 }
 
 .col2 {
@@ -356,25 +343,8 @@ h4 {
   display: block;
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
-    no-repeat #f72210;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/containno-repeat #f72210;
   margin-right: 10px;
-}
-
-.newsletter-signup {
-  max-width: 300px;
-  margin: 0 auto 30px;
-  border: 1px solid #e5e5e5;
-  background-color: #f4f5f6;
-  padding: 20px;
-}
-
-.newsletter-signup .onek {
-  margin-bottom: 10px;
-}
-
-.red3 {
-  color: red;
 }
 
 .onek {
@@ -385,6 +355,14 @@ h4 {
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: #666;
+}
+
+.newsletter-signup .onek {
+  margin-bottom: 10px;
+}
+
+.red3 {
+  color: red;
 }
 
 .subscribe-block .col-r .info {
@@ -401,11 +379,6 @@ h4 {
   margin-bottom: 0;
   text-transform: uppercase;
   padding: 10px 10px 10px 12px;
-}
-
-.container-fluid,
-.container {
-  max-width: 100vw;
 }
 
 .page-bottom {
@@ -498,11 +471,6 @@ h4 {
   left: 80px;
 }
 
-.subscribe-block .mag-thumb {
-  width: 170px;
-  height: 228px;
-}
-
 .subscribe-block .col-l {
   background-color: #f4f5f6;
   padding: 24px 20px 20px;
@@ -510,12 +478,6 @@ h4 {
 
 .jc-c {
   justify-content: center;
-}
-
-.n-title {
-  font: bold 19px/19px "Roboto Condensed", sans-serif;
-  margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -692,16 +654,16 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-  .subscribe-block .col-l,
-  .subscribe-block .col-r {
-    text-align: center;
-  }
-
   .col-l,
   .col-r {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .subscribe-block .col-l,
+  .subscribe-block .col-r {
     text-align: center;
   }
 
@@ -720,6 +682,7 @@ h4 {
   .hide5 {
     display: none;
   }
+
   .upper-footer,
   .upper-footer1 {
     display: flex;
@@ -782,9 +745,9 @@ h4 {
     padding-top: 40px;
   }
 
-  .subscribe-block .col-l,
-  .subscribe-block .col-r .info {
-    padding: 30px;
+  .upper-footer1 img {
+    height: 50px;
+    width: 200px;
   }
 
   .magazine .col-sm-4 .picture img,
@@ -816,11 +779,6 @@ h4 {
 
   .hide6 {
     display: none;
-  }
-
-  .upper-footer1 img {
-    height: 50px;
-    width: 200px;
   }
 }
 
@@ -869,6 +827,20 @@ h4 {
     line-height: 30px;
   }
 
+  ul.page-nav li {
+    border-left-width: 1px;
+    color: black;
+    flex-grow: 1;
+    border-left-style: solid;
+    border-left-color: #c7c7c7;
+    text-align: center;
+  }
+
+  .page-footer .social li {
+    margin-left: 10px;
+    margin-top: 35px;
+  }
+
   .main-nav ul li:first-of-type {
     border: none;
   }
@@ -907,21 +879,6 @@ h4 {
     border-bottom-color: #f4f5f6;
   }
 
-  ul.page-nav li {
-    color: black;
-  }
-
-  ul.page-nav li {
-    flex-grow: 1;
-  }
-
-  ul.page-nav li {
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: #c7c7c7;
-    text-align: center;
-  }
-
   nav {
     background-color: white;
   }
@@ -932,21 +889,21 @@ h4 {
     padding: 0;
   }
 
+  input {
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+  }
+
   nav ul li input {
     width: 55px;
     border: none;
     font-size: 17px;
     padding: 0;
-  }
-
-  input {
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
   }
 
   .first a:hover {
@@ -956,11 +913,6 @@ h4 {
 
   .hide6 {
     display: none;
-  }
-
-  .page-footer .social li {
-    margin-left: 10px;
-    margin-top: 35px;
   }
 
   .page-footer .copyright {
@@ -1002,16 +954,15 @@ h4 {
   margin-left: 10px;
 }
 
-.page-footer .social .genericon {
-  line-height: 24px;
-}
-
 .genericon {
   font-size: 26px;
   text-align: center;
   display: block;
-  font-family: "Genericons";
   cursor: pointer;
+}
+
+.page-footer .social .genericon {
+  line-height: 24px;
 }
 
 .genericon-twitter {
@@ -1043,11 +994,6 @@ h4 {
   cursor: pointer;
 }
 
-.page-footer .footer-links li a:hover {
-  color: black;
-  text-decoration: none;
-}
-
 .social {
   color: gray;
   margin-bottom: 5px;
@@ -1055,4 +1001,9 @@ h4 {
 
 .social a:hover {
   color: gray;
+}
+
+.page-footer .footer-links li a:hover {
+  color: black;
+  text-decoration: none;
 }
